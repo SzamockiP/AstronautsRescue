@@ -1,0 +1,8 @@
+asteroid_speed = 3
+asteroid_size = 5
+asteroid_amount = 25
+astronaut_speed = 10
+astronaut_size = 5
+point_size = 5
+point_amount = 3
+spaceship_size = 5

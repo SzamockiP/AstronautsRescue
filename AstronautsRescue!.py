@@ -208,7 +208,7 @@ class Astronaut:
         self.position = list(position)
         self.move = [0, 0]
         self.speed = speed
-        self.size = size  # todo jak nie potrzeba to wyjeb
+        self.size = size  # todo jak nie potrzeba to usun
         self.astronaut_origin_img = self.astronaut_img = pygame.image.load("Content/Images/Astronaut.png")
         self.astronaut_img = self.astronaut_origin_img = pygame.transform.rotozoom(self.astronaut_origin_img, 0, size / 20)
 
@@ -234,7 +234,7 @@ class AstronautRescuer:
         self.position = list(position)
         self.move = [0, 0]
         self.speed = speed
-        self.size = size  # todo jak nie potrzeba to wyjeb
+        self.size = size  # todo jak nie potrzeba to usun
         self.rescue_astronaut_origin_img = self.rescue_astronaut_img = pygame.image.load("Content/Images/RescueAstronaut.png")
         self.rescue_astronaut_img = self.rescue_astronaut_origin_img = pygame.transform.rotozoom(self.rescue_astronaut_origin_img, 0, size / 20)
 
@@ -513,7 +513,7 @@ def options():
                     f.write("point_size = " + str(options_object.point_size) + "\n")
                     f.write("point_amount = " + str(options_object.point_amount) + "\n")
                     f.write("spaceship_size = " + str(options_object.spaceship_size) + "\n")
-                    f.close()  # todo wsm chuj mnie to boli ale jak chcesz to te warunki jakoś skróć by nie było tego spaghetti
+                    f.close()  # todo warunki jakoś skróć by nie było tego spaghetti
                 elif pygame.Rect(width / 2 - 200, 55, 40, 40).collidepoint(pygame.mouse.get_pos()):
                     if options_object.asteroid_speed > 1:
                         options_object.asteroid_speed -= 1
